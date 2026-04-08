@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Personality Operating System for AI Agents"><meta name="author" content="Identity OS Team"><link href="https://docs.identity-os.dev/playground/" rel="canonical"><link rel="icon" href="../assets/images/logo-dark.png"><meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6"><title>Interactive Playground - Identity OS</title><link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css"><link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback"><style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style><link rel="stylesheet" href="../stylesheets/extra.css"><script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; worker-src 'self' blob:; connect-src 'self' https://api.identity-os.dev; object-src 'none'; frame-ancestors 'none'; base-uri 'self';"><link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head> <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="deep-purple"> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" for="__drawer"></label> <div data-md-component="skip"> <a href="#interactive-playground" class="md-skip"> Skip to content </a> </div> <div data-md-component="announce"> <aside class="md-banner"> <div class="md-banner__inner md-grid md-typeset"> <a href="https://xiocasso.github.io/identityOs/" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:6px; font-size:13px; letter-spacing:0.01em;"> <span style="opacity:0.5;">←</span> identity-os.dev </a> </div> </aside> </div> <div data-md-color-scheme="default" data-md-component="outdated" hidden=""> </div> <header class="md-header" data-md-component="header"> <nav class="md-header__inner md-grid" aria-label="Header"> <a href=".." title="Identity OS" class="md-header__button md-logo" aria-label="Identity OS" data-md-component="logo"> <img src="../assets/images/logo-dark.png" alt="logo"> </a> <label class="md-header__button md-icon" for="__drawer"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg> </label> <div class="md-header__title" data-md-component="header-title"> <div class="md-header__ellipsis"> <div class="md-header__topic"> <span class="md-ellipsis"> Identity OS </span> </div> <div class="md-header__topic" data-md-component="header-topic"> <span class="md-ellipsis"> Interactive Playground </span> </div> </div> </div> <form class="md-header__option" data-md-component="palette"> <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="deep-purple" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_0"> <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden=""> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg> </label> <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="grey" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_1"> <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden=""> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg> </label> </form> <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script> <label class="md-header__button md-icon" for="__search"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg> </label> <div class="md-search" data-md-component="search" role="dialog"> <label class="md-search__overlay" for="__search"></label> <div class="md-search__inner" role="search"> <form class="md-search__form" name="search"> <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required=""> <label class="md-search__icon md-icon" for="__search"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg> </label> <nav class="md-search__options" aria-label="Search"> <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard="" data-clipboard-text="" data-md-component="search-share" tabindex="-1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg> </a> <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg> </button> </nav> <div class="md-search__suggest" data-md-component="search-suggest"></div> </form> <div class="md-search__output"> <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix=""> <div class="md-search-result" data-md-component="search-result"> <div class="md-search-result__meta"> Initializing search </div> <ol class="md-search-result__list" role="presentation"></ol> </div> </div> </div> </div> </div> <div class="md-header__source"> <a href="https://github.com/Xiocasso/identity-os-docs" title="Go to repository" class="md-source" data-md-component="source"> <div class="md-source__icon md-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg> </div> <div class="md-source__repository"> Xiocasso/identity-os-docs </div> </a> </div> </nav> </header> <div class="md-container" data-md-component="container"> <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs"> <div class="md-grid"> <ul class="md-tabs__list"> <li class="md-tabs__item"> <a href=".." class="md-tabs__link"> Home </a> </li> <li class="md-tabs__item"> <a href="../quickstart/" class="md-tabs__link"> Get Started </a> </li> <li class="md-tabs__item"> <a href="../concepts/modes/" class="md-tabs__link"> How It Works </a> </li> <li class="md-tabs__item"> <a href="../integrations/claude-agent-sdk/" class="md-tabs__link"> Integrations </a> </li> <li class="md-tabs__item"> <a href="../api/" class="md-tabs__link"> API </a> </li> <li class="md-tabs__item"> <a href="../sdks/python/" class="md-tabs__link"> SDKs </a> </li> <li class="md-tabs__item"> <a href="../engine-updates/" class="md-tabs__link"> Changelog </a> </li> <li class="md-tabs__item"> <a href="../legal/terms/" class="md-tabs__link"> Legal </a> </li> </ul> </div> </nav> <main class="md-main" data-md-component="main"> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation"> <div class="md-sidebar__scrollwrap"> <div class="md-sidebar__inner"> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0"> <label class="md-nav__title" for="__drawer"> <a href=".." title="Identity OS" class="md-nav__button md-logo" aria-label="Identity OS" data-md-component="logo"> <img src="../assets/images/logo-dark.png" alt="logo"> </a> Identity OS </label> <div class="md-nav__source"> <a href="https://github.com/Xiocasso/identity-os-docs" title="Go to repository" class="md-source" data-md-component="source"> <div class="md-source__icon md-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg> </div> <div class="md-source__repository"> Xiocasso/identity-os-docs </div> </a> </div> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href=".." class="md-nav__link"> <span class="md-ellipsis"> Home </span> </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2"> <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0"> <span class="md-ellipsis"> Get Started </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_2"> <span class="md-nav__icon md-icon"></span> Get Started </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../quickstart/" class="md-nav__link"> <span class="md-ellipsis"> Quickstart </span> </a> </li> <li class="md-nav__item"> <a href="../generational-identity/" class="md-nav__link"> <span class="md-ellipsis"> Generational Identity </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3"> <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0"> <span class="md-ellipsis"> How It Works </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_3"> <span class="md-nav__icon md-icon"></span> How It Works </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../concepts/modes/" class="md-nav__link"> <span class="md-ellipsis"> The 7 Modes </span> </a> </li> <li class="md-nav__item"> <a href="../concepts/stress-model/" class="md-nav__link"> <span class="md-ellipsis"> Stress Model </span> </a> </li> <li class="md-nav__item"> <a href="../concepts/drift-detection/" class="md-nav__link"> <span class="md-ellipsis"> Drift Detection </span> </a> </li> <li class="md-nav__item"> <a href="../concepts/execution-contract/" class="md-nav__link"> <span class="md-ellipsis"> Execution Contract </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4"> <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0"> <span class="md-ellipsis"> Integrations </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_4"> <span class="md-nav__icon md-icon"></span> Integrations </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../integrations/claude-agent-sdk/" class="md-nav__link"> <span class="md-ellipsis"> Claude Agent SDK </span> </a> </li> <li class="md-nav__item"> <a href="../integrations/langgraph/" class="md-nav__link"> <span class="md-ellipsis"> LangGraph </span> </a> </li> <li class="md-nav__item"> <a href="../integrations/crewai/" class="md-nav__link"> <span class="md-ellipsis"> CrewAI </span> </a> </li> <li class="md-nav__item"> <a href="../integrations/openai-agents/" class="md-nav__link"> <span class="md-ellipsis"> OpenAI Agents SDK </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5"> <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0"> <span class="md-ellipsis"> API </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_5"> <span class="md-nav__icon md-icon"></span> API </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../api/" class="md-nav__link"> <span class="md-ellipsis"> Overview </span> </a> </li> <li class="md-nav__item"> <a href="../api/instances/" class="md-nav__link"> <span class="md-ellipsis"> Instances </span> </a> </li> <li class="md-nav__item"> <a href="../api/engine/" class="md-nav__link"> <span class="md-ellipsis"> Engine </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6"> <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0"> <span class="md-ellipsis"> SDKs </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_6"> <span class="md-nav__icon md-icon"></span> SDKs </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../sdks/python/" class="md-nav__link"> <span class="md-ellipsis"> Python </span> </a> </li> <li class="md-nav__item"> <a href="../sdks/typescript/" class="md-nav__link"> <span class="md-ellipsis"> TypeScript </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item"> <a href="../engine-updates/" class="md-nav__link"> <span class="md-ellipsis"> Changelog </span> </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8"> <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0"> <span class="md-ellipsis"> Legal </span> <span class="md-nav__icon md-icon"></span> </label> <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false"> <label class="md-nav__title" for="__nav_8"> <span class="md-nav__icon md-icon"></span> Legal </label> <ul class="md-nav__list" data-md-scrollfix=""> <li class="md-nav__item"> <a href="../legal/terms/" class="md-nav__link"> <span class="md-ellipsis"> Terms </span> </a> </li> <li class="md-nav__item"> <a href="../legal/privacy/" class="md-nav__link"> <span class="md-ellipsis"> Privacy </span> </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc"> <div class="md-sidebar__scrollwrap"> <div class="md-sidebar__inner"> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class="md-nav__title" for="__toc"> <span class="md-nav__icon md-icon"></span> Table of contents </label> <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix=""> <li class="md-nav__item"> <a href="#what-to-try" class="md-nav__link"> <span class="md-ellipsis"> What to Try </span> </a> </li> </ul> </nav> </div> </div> </div> <div class="md-content" data-md-component="content"> <article class="md-content__inner md-typeset"> <h1 id="interactive-playground">Interactive Playground<a class="headerlink" href="#interactive-playground" title="Permanent link">¶</a></h1> <p>Try Identity OS directly from your browser. No installation needed.</p> <div id="playground-app"> <style>
+#playground-app {
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+#playground-app .pg-section {
+    margin-bottom: 24px;
+}
+#playground-app label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+}
+#playground-app input, #playground-app select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgba(140,140,180,0.15);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--md-code-bg-color, #12121e);
+    color: var(--md-default-fg-color, #e0e0ec);
+}
+#playground-app input:focus, #playground-app select:focus {
+    outline: none;
+    border-color: rgba(139,131,255,0.4);
+}
+#playground-app .pg-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: end;
+}
+#playground-app .pg-btn {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+}
+#playground-app .pg-btn-primary {
+    background: #8b83ff;
+    color: #fff;
+}
+#playground-app .pg-btn-primary:hover { background: #a89fff; }
+#playground-app .pg-btn-secondary {
+    background: transparent;
+    border: 1px solid rgba(140,140,180,0.2);
+    color: var(--md-default-fg-color--light, #8888a0);
+}
+#playground-app .pg-btn-secondary:hover {
+    border-color: rgba(140,140,180,0.4);
+}
+#playground-app .pg-btn-danger {
+    background: rgba(248,81,73,0.12);
+    color: #f85149;
+    border: 1px solid rgba(248,81,73,0.2);
+}
+#playground-app .pg-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+#playground-app .pg-buttons {
+    display: flex; gap: 8px; flex-wrap: wrap;
+}
+#playground-app .pg-output {
+    background: var(--md-code-bg-color, #0e0e1a);
+    border: 1px solid rgba(139,131,255,0.1);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    max-height: 400px;
+    overflow-y: auto;
+}
+#playground-app .pg-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+}
+#playground-app .pg-status-ok { background: rgba(63,185,80,0.12); color: #3fb950; }
+#playground-app .pg-status-err { background: rgba(248,81,73,0.12); color: #f85149; }
+#playground-app .pg-status-warn { background: rgba(255,180,60,0.12); color: #ffb43c; }
+#playground-app .pg-meter {
+    height: 6px;
+    background: rgba(140,140,180,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+#playground-app .pg-meter-fill {
+    height: 100%; border-radius: 3px;
+    transition: width 0.3s ease-out;
+}
+#playground-app .pg-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 2px 8px; border-radius: 3px; margin: 2px;
+}
+#playground-app .pg-pill-green { background: rgba(63,185,80,0.12); color: #3fb950; }
+#playground-app .pg-pill-red { background: rgba(248,81,73,0.12); color: #f85149; }
+</style> <!-- Step 1: API Key --> <div class="pg-section"> <label>1. Your API Key</label> <input type="password" id="pg-apikey" placeholder="idos_sk_..."> <div style="font-size:12px; margin-top:4px;" id="pg-auth-status"></div> </div> <!-- Step 2: Instance --> <div class="pg-section"> <label>2. Create or Select Instance</label> <div class="pg-row"> <input type="text" id="pg-instance-name" placeholder="Agent name (e.g. Aria)"> <div class="pg-buttons"> <button class="pg-btn pg-btn-primary" onclick="pgCreateInstance()">Create</button> <button class="pg-btn pg-btn-secondary" onclick="pgListInstances()">List All</button> </div> </div> <div style="font-size:12px; margin-top:4px;" id="pg-instance-status"></div> </div> <!-- Step 3: Process --> <div class="pg-section"> <label>3. Send Observation</label> <div class="pg-row"> <select id="pg-mode"> <option value="perception">Perception</option> <option value="exploration" selected="">Exploration</option> <option value="order">Order</option> <option value="assertion">Assertion</option> <option value="connection">Connection</option> <option value="identity">Identity</option> <option value="stress_response">Stress Response</option> </select> <div> <div style="display:flex; justify-content:space-between; font-size:12px;"> <span>Strength</span><span id="pg-strength-val">0.7</span> </div> <input type="range" id="pg-strength" min="0.1" max="1.0" step="0.1" value="0.7" oninput="document.getElementById('pg-strength-val').textContent=this.value"> </div> </div> <div class="pg-buttons" style="margin-top:12px"> <button class="pg-btn pg-btn-primary" onclick="pgProcess()" id="pg-process-btn" disabled="">Process</button> <button class="pg-btn pg-btn-secondary" onclick="pgStress()">Stress x5</button> <button class="pg-btn pg-btn-secondary" onclick="pgSnapshot()">Snapshot</button> <button class="pg-btn pg-btn-secondary" onclick="pgGetContract()">Contract</button> <button class="pg-btn pg-btn-danger" onclick="pgReset()">Reset</button> </div> </div> <!-- Live Contract Display --> <div class="pg-section" id="pg-contract-display" style="display:none"> <label>Live Contract</label> <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:12px; margin-bottom:12px;"> <div> <div style="font-size:11px; opacity:0.5;">Stress</div> <div id="pg-stress" style="font-size:20px; font-weight:600;">—</div> </div> <div> <div style="font-size:11px; opacity:0.5;">Energy</div> <div id="pg-energy" style="font-size:20px; font-weight:600;">—</div> <div class="pg-meter"><div class="pg-meter-fill" id="pg-energy-bar" style="width:0%;background:#3fb950;"></div></div> </div> <div> <div style="font-size:11px; opacity:0.5;">Drift</div> <div id="pg-drift" style="font-size:20px; font-weight:600;">—</div> </div> <div> <div style="font-size:11px; opacity:0.5;">Cycle</div> <div id="pg-cycle" style="font-size:20px; font-weight:600;">—</div> </div> </div> <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;"> <div> <div style="font-size:11px; opacity:0.5; margin-bottom:4px;">ALLOWED</div> <div id="pg-allowed"></div> </div> <div> <div style="font-size:11px; opacity:0.5; margin-bottom:4px;">FORBIDDEN</div> <div id="pg-forbidden"></div> </div> </div> </div> <!-- Raw Response --> <div class="pg-section"> <label>Response Log</label> <div class="pg-output" id="pg-output">Enter your API key to begin.</div> </div> <script>
+var PG_API = 'https://api.identity-os.dev';
+var pgInstanceId = null;
+var pgTurn = 0;
+
+function pgKey() { return document.getElementById('pg-apikey').value.trim(); }
+
+async function pgCall(method, path, body) {
+    var key = pgKey();
+    if (!key) { pgLog('Enter your API key first.'); return null; }
+    var opts = { method: method, headers: { 'Content-Type':'application/json', 'Authorization':'Bearer '+key } };
+    if (body) opts.body = JSON.stringify(body);
+    try {
+        var r = await fetch(PG_API + path, opts);
+        var t = await r.text();
+        var d = t ? JSON.parse(t) : {};
+        if (!r.ok) { pgLog('ERROR '+r.status+': '+JSON.stringify(d,null,2)); return null; }
+        return d;
+    } catch(e) { pgLog('Network error: '+e.message); return null; }
+}
+
+function pgLog(msg) {
+    var el = document.getElementById('pg-output');
+    var ts = new Date().toLocaleTimeString();
+    el.textContent = '['+ts+'] '+msg+'\n\n'+el.textContent;
+}
+
+function pgUpdateDisplay(data) {
+    document.getElementById('pg-contract-display').style.display = 'block';
+    if (data.contract) {
+        var c = data.contract;
+        var se = document.getElementById('pg-stress');
+        var sl = c.current_stress_level||'—';
+        se.textContent = sl;
+        se.style.color = sl==='LOW'?'#3fb950':sl==='MED'?'#ffb43c':'#f85149';
+        var en = c.energy_level!=null?c.energy_level:0;
+        document.getElementById('pg-energy').textContent = en.toFixed(2);
+        var bar = document.getElementById('pg-energy-bar');
+        bar.style.width = (en*100)+'%';
+        bar.style.background = en>0.5?'#3fb950':en>0.2?'#ffb43c':'#f85149';
+        document.getElementById('pg-allowed').innerHTML = (c.allowed_actions||[]).map(function(a){return '<span class="pg-pill pg-pill-green">'+a+'</span>';}).join('');
+        document.getElementById('pg-forbidden').innerHTML = (c.forbidden_actions||[]).map(function(a){return '<span class="pg-pill pg-pill-red">'+a+'</span>';}).join('');
+    }
+    if (data.drift) document.getElementById('pg-drift').textContent = data.drift.level||'—';
+    if (data.snapshot) document.getElementById('pg-cycle').textContent = data.snapshot.cycle_count||'0';
+}
+
+async function pgCreateInstance() {
+    var name = document.getElementById('pg-instance-name').value.trim()||'PlaygroundAgent';
+    pgLog('Creating "'+name+'"...');
+    var d = await pgCall('POST','/v1/instances',{name:name});
+    if (d) {
+        pgInstanceId = d.id; pgTurn = 0;
+        document.getElementById('pg-process-btn').disabled = false;
+        document.getElementById('pg-instance-status').innerHTML = '<span class="pg-status pg-status-ok">'+pgInstanceId+'</span>';
+        pgLog('Created: '+pgInstanceId);
+    }
+}
+
+async function pgListInstances() {
+    var d = await pgCall('GET','/v1/instances');
+    if (d) pgLog('Instances:\n'+JSON.stringify(d,null,2));
+}
+
+async function pgProcess() {
+    if (!pgInstanceId) { pgLog('Create an instance first.'); return; }
+    var mode = document.getElementById('pg-mode').value;
+    var str = parseFloat(document.getElementById('pg-strength').value);
+    pgTurn++;
+    var d = await pgCall('POST','/v1/instances/'+pgInstanceId+'/process',{mode_target:mode,signal_strength:str});
+    if (d) { pgUpdateDisplay(d); pgLog('Turn '+pgTurn+' ('+mode+' @ '+str+'):\n'+JSON.stringify(d.contract,null,2)); }
+}
+
+async function pgStress() {
+    if (!pgInstanceId) { pgLog('Create an instance first.'); return; }
+    pgLog('Sending 5x stress...');
+    for (var i=0;i<5;i++) {
+        pgTurn++;
+        var d = await pgCall('POST','/v1/instances/'+pgInstanceId+'/process',{mode_target:'stress_response',signal_strength:0.95});
+        if (d) { pgUpdateDisplay(d); pgLog('Stress '+(i+1)+'/5: '+d.contract.current_stress_level+' energy='+d.contract.energy_level.toFixed(2)); }
+    }
+}
+
+async function pgSnapshot() {
+    if (!pgInstanceId) return;
+    var d = await pgCall('GET','/v1/instances/'+pgInstanceId+'/snapshot');
+    if (d) pgLog('Snapshot:\n'+JSON.stringify(d,null,2));
+}
+
+async function pgGetContract() {
+    if (!pgInstanceId) return;
+    var d = await pgCall('GET','/v1/instances/'+pgInstanceId+'/contract');
+    if (d) pgLog('Contract:\n'+JSON.stringify(d,null,2));
+}
+
+async function pgReset() {
+    if (!pgInstanceId) return;
+    pgLog('Resetting...');
+    var d = await pgCall('POST','/v1/instances/'+pgInstanceId+'/reset',{mode:'initial'});
+    if (d) { pgTurn=0; pgLog('Reset complete.'); }
+}
+
+document.getElementById('pg-apikey').addEventListener('input', async function() {
+    var key = this.value.trim();
+    if (key.length<10) return;
+    var s = document.getElementById('pg-auth-status');
+    s.innerHTML = '<span class="pg-status pg-status-warn">Checking...</span>';
+    try {
+        var r = await fetch(PG_API+'/v1/instances',{headers:{'Authorization':'Bearer '+key}});
+        s.innerHTML = r.ok ? '<span class="pg-status pg-status-ok">Authenticated</span>' : '<span class="pg-status pg-status-err">Invalid key</span>';
+    } catch(e) { s.innerHTML = '<span class="pg-status pg-status-err">Connection error</span>'; }
+});
+</script> </div> <hr> <h2 id="what-to-try">What to Try<a class="headerlink" href="#what-to-try" title="Permanent link">¶</a></h2> <ol> <li><strong>Paste your API key</strong> — get one by <a href="https://identity-os.lemonsqueezy.com/checkout/buy/062e3ef5-3559-4336-bbd7-605243fdc2e6">signing up free</a></li> <li><strong>Create an instance</strong> — give your agent a name</li> <li><strong>Process observations</strong> — change mode and strength, watch the contract adapt</li> <li><strong>Stress test</strong> — click "Stress x5" and watch stress escalate, energy deplete, actions narrow</li> <li><strong>Reset</strong> — restore to initial state</li> </ol> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type="button" class="md-top md-icon" data-md-component="top" hidden=""> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg> Back to top </button> </main> <footer class="md-footer"> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class="md-copyright"> <div class="md-copyright__highlight"> Copyright © 2025-2026 Identity OS. All rights reserved. </div> Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"> Material for MkDocs </a> </div> <div class="md-social"> <a href="https://github.com/Xiocasso" target="_blank" rel="noopener" title="GitHub" class="md-social__link"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg> </a> <a href="https://x.com/identityos_dev" target="_blank" rel="noopener" title="X" class="md-social__link"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"></path></svg> </a> <a href="https://www.linkedin.com/in/yunpeng-xiong-676089137/" target="_blank" rel="noopener" title="LinkedIn" class="md-social__link"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg> </a> </div> </div> </div> </footer> </div> <div class="md-dialog" data-md-component="dialog"> <div class="md-dialog__inner md-typeset"></div> </div> <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.path", "navigation.expand", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.select", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script> <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
